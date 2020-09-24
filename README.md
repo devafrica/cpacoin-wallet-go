@@ -19,7 +19,7 @@ Important notes:
 
 ### Mac
 
-1. Go [here](https://github.com/turtlecoin/CpaCoin-wallet-go/releases) and download the latest release called **CpaCoin-Nest-x.xx-Mac.zip**.
+1. Go [here](https://cryptopay.org.za/wp-content/uploads/2020/04/CPA-Gui-Wallet-Mac.zip) and download the latest release called **CpaCoin-Nest-x.xx-Mac.zip**.
 2. Unzip it and move the folder wherever you want or drag the application **CpaCoin-Nest** into /Applications or any other folder.
 3. Launch the application. (If your mac complains that the app comes from an unindentified developer and does not want to open it, just right-click (or ctrl-click) on the app, and choose open > open)
 
@@ -32,7 +32,7 @@ Important notes:
 
 ### Linux
 
-1. Go [here](https://github.com/turtlecoin/CpaCoin-wallet-go/releases) and download the latest release called **CpaCoin-Nest-x.xx-Linux.tar.gz**
+1. Go [here](https://cryptopay.org.za/wp-content/uploads/2020/04/CPA-Gui-Wallet-linux.zip) and download the latest release called **CpaCoin-Nest-x.xx-Linux.tar.gz**
 2. extract it
 `$ tar xvzf CpaCoin-Nest-x.xx-Linux.tar.gz`
 3. run **CpaCoin-Nest.sh**. (Make sure you leave everything as is in the folder)
