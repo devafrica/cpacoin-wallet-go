@@ -2,7 +2,7 @@
 
 The universal desktop GUI wallet for CpaCoin
 
-![Logo](/cpa-logo.png)
+![Logo](cpa-logo.png)
 
 ## Installation
 
