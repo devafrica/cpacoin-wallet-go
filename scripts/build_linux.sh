@@ -36,8 +36,8 @@ go get github.com/pkg/errors >/dev/null
 echo "Done"
 
 # Clean this up and link to where we are building from
-rm -rf $HOME/go/src/NamCoin-Nest
-ln -s $OUR_BUILD_PATH $HOME/go/src/NamCoin-Nest
+rm -rf $HOME/go/src/CpaCoin-Nest
+ln -s $OUR_BUILD_PATH $HOME/go/src/CpaCoin-Nest
 
 # Remove previous builds
 echo -n "Building project... "

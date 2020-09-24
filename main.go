@@ -7,8 +7,8 @@
 package main
 
 import (
-	"NamCoin-Nest/turtlecoinwalletdrpcgo"
-	"NamCoin-Nest/walletdmanager"
+	"CpaCoin/turtlecoinwalletdrpcgo"
+	"CpaCoin/walletdmanager"
 	"encoding/csv"
 	"encoding/json"
 	"io"
@@ -79,7 +79,7 @@ func main() {
 			log.Fatal(err)
 		}
 		pathToHomeDir = usr.HomeDir
-		pathToAppFolder := pathToHomeDir + "/Library/Application Support/NamCoin-Nest"
+		pathToAppFolder := pathToHomeDir + "/Library/Application Support/CpaCoin-Nest"
 		os.Mkdir(pathToAppFolder, os.ModePerm)
 		pathToDB = pathToAppFolder + "/" + pathToDB
 

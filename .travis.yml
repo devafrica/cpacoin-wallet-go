@@ -32,13 +32,13 @@ script:
 - if [[ "$LABEL" == "linux" ]]; then ls -la ./deploy/linux ; fi
 
 - if [[ "${TRAVIS_TAG}" == "" ]]; then export TRAVIS_TAG=${TRAVIS_COMMIT} ; fi
-- rm -rf NamCoin-Nest-${TRAVIS_TAG}
-- mkdir NamCoin-Nest-${TRAVIS_TAG}
-- cp LICENSE.md NamCoin-Nest-${TRAVIS_TAG}
-- /bin/cp -r ./deploy/${LABEL}/* ./NamCoin-Nest-${TRAVIS_TAG}
-- tar cvfz NamCoin-Nest-${TRAVIS_TAG}-${LABEL}.tar.gz NamCoin-Nest-${TRAVIS_TAG}/
+- rm -rf CpaCoin-Nest-${TRAVIS_TAG}
+- mkdir CpaCoin-Nest-${TRAVIS_TAG}
+- cp LICENSE.md CpaCoin-Nest-${TRAVIS_TAG}
+- /bin/cp -r ./deploy/${LABEL}/* ./CpaCoin-Nest-${TRAVIS_TAG}
+- tar cvfz CpaCoin-Nest-${TRAVIS_TAG}-${LABEL}.tar.gz CpaCoin-Nest-${TRAVIS_TAG}/
 - rm -rf builds
 - mkdir builds
-- cp NamCoin-Nest-${TRAVIS_TAG}-${LABEL}.tar.gz builds
+- cp CpaCoin-Nest-${TRAVIS_TAG}-${LABEL}.tar.gz builds
 - ls -la ./builds
 

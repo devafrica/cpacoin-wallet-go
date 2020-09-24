@@ -7,7 +7,7 @@
 package main
 
 import (
-	"NamCoin-Nest/walletdmanager"
+	"CpaCoin-Nest/walletdmanager"
 
 	"github.com/atotto/clipboard"
 	_ "github.com/mattn/go-sqlite3"

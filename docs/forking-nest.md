@@ -4,7 +4,7 @@ If you created your cryptonote coin by forking TurtleCoin and you want a univers
 
 ## Warning
 
-I have no idea when you forked TurtleCoin and how you keep up with its development. Nor do I know all the parameters you changed and what you implemented differently compared to TurtleCoin. NamCoin-Nest evolves very much together with TurtleCoin. Adapting Nest will depend from coin to coin. In this guide, we do our best to identify the things to modify and places in the code to look at. But do not expect it to be one-size-fits-all. That being said, we will assume that you followed this guide to create your coin: [Forking TurtleCoin
+I have no idea when you forked TurtleCoin and how you keep up with its development. Nor do I know all the parameters you changed and what you implemented differently compared to TurtleCoin. CpaCoin-Nest evolves very much together with TurtleCoin. Adapting Nest will depend from coin to coin. In this guide, we do our best to identify the things to modify and places in the code to look at. But do not expect it to be one-size-fits-all. That being said, we will assume that you followed this guide to create your coin: [Forking TurtleCoin
 ](https://github.com/turtlecoin/turtlecoin/wiki/Forking-Turtlecoin).
 
 Nest was not developed with the idea in mind to be easily forked for other coins (Shame on me! But sorry, I did not expect it to gather so much interest). Forking it involves a bit more than just changing some parameters in a config file. But do not worry, it is not complicated. And we will work on improving its forkability.
@@ -47,7 +47,7 @@ You must modify all the occurrences of _TurtleCoin-Nest_ and _TurtleCoin Nest_ i
 - in constants.go:
 
     ```Go
-    logFileFilename             = "NamCoin-Nest.log"
+    logFileFilename             = "CpaCoin-Nest.log"
     ```
 
 - in main.go:
@@ -55,14 +55,14 @@ You must modify all the occurrences of _TurtleCoin-Nest_ and _TurtleCoin Nest_ i
     in the import statement (that's the most important one):
 
     ```Go
-    "NamCoin-Nest/turtlecoinwalletdrpcgo"
-    "NamCoin-Nest/walletdmanager"
+    "CpaCoin-Nest/turtlecoinwalletdrpcgo"
+    "CpaCoin-Nest/walletdmanager"
     ```
 
     and
 
     ```Go
-    pathToAppFolder := pathToHomeDir + "/Library/Application Support/NamCoin-Nest"
+    pathToAppFolder := pathToHomeDir + "/Library/Application Support/CpaCoin-Nest"
     ```
 
 - in walletdmanager/walletdmanager.go:
@@ -70,13 +70,13 @@ You must modify all the occurrences of _TurtleCoin-Nest_ and _TurtleCoin Nest_ i
     in the import statement (that's also an important one):
 
     ```Go
-    "NamCoin-Nest/turtlecoinwalletdrpcgo"
+    "CpaCoin-Nest/turtlecoinwalletdrpcgo"
     ```
 
     and 2 occurences of
 
     ```Go
-    pathToAppLibDir := pathToHomeDir + "/Library/Application Support/NamCoin-Nest"
+    pathToAppLibDir := pathToHomeDir + "/Library/Application Support/CpaCoin-Nest"
     ```
 
     I know, I know, this could be refactored and put in constants or config files. It will be done at some point.
